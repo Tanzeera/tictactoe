@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <div id="start-screen" class="screen">
+            <h2>Start New Game</h2>
+           <div class="game-options">
+                <button id="vs-computer-btn">Player vs Computer</button>
+                <button id="vs-player-btn">Player vs Player</button>
+            </div>
+            
+            <div id="player-form" class="hidden">
+                <input type="text" id="player1-name" placeholder="Player 1 (X)">
+                <input type="text" id="player2-name" placeholder="Player 2 (O)" class="hidden">
+                <button id="start-btn">Start Game</button>
+            </div>
+        </div>
+        
+        <div id="game-screen" class="screen hidden">
+            <div class="game-info">
+                <h2 id="player-turn"></h2>
+                <h3 id="game-status"></h3>
+            </div>
+            
+            <div class="board">
+                <div class="row">
+                    <div class="cell" data-row="0" data-col="0"></div>
+                    <div class="cell" data-row="0" data-col="1"></div>
+                    <div class="cell" data-row="0" data-col="2"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" data-row="1" data-col="0"></div>
+                    <div class="cell" data-row="1" data-col="1"></div>
+                    <div class="cell" data-row="1" data-col="2"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" data-row="2" data-col="0"></div>
+                    <div class="cell" data-row="2" data-col="1"></div>
+                    <div class="cell" data-row="2" data-col="2"></div>
+                </div>
+            </div>
+            
+            <button id="new-game-btn">New Game</button>
+        </div>
+    </div>
+    
+    <script src="/js/game.js"></script>
+</body>
+</html>
